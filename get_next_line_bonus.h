@@ -20,7 +20,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-char	*get_next_line(int fd);
+char	*get_next_line_bonus(int fd);
 char	*read_line(int fd, char *str);
 char	*write_line(const char *str);
 char	*re_line(char *str);

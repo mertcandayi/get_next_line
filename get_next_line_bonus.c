@@ -110,7 +110,7 @@ char	*re_line(char *str)
 	return (new_line);
 }
 
-char	*get_next_line(int fd)
+char	*get_next_line_bonus(int fd)
 {
 	static char	*garbage[1024];
 	char		*line;
