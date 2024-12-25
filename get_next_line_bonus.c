@@ -115,7 +115,7 @@ char	*get_next_line(int fd)
 	static char	*garbage[1024];
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 1024)
 		return (NULL);
 	garbage[fd] = read_line(fd, garbage[fd]);
 	if (!garbage[fd] || !*garbage[fd])
